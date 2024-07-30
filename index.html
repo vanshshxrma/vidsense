@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="standalone/styles.css">
+    <title>VidSense</title>
+</head>
+
+<body>
+    <!-- <nav class="navbar">
+        <div class="container">
+            <div class="logo">VidSense</div>
+            <ul class="nav-links">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Instructions</a></li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <nav>
+        <div>
+            <a id="vid" href="https://ayush-jsrt.github.io/VidSense---DU-Hacks3.0/">
+                <img src="standalone/eye.png" alt="">
+                VidSense.
+            </a>
+        </div>
+        <div>
+            <a href="https://github.com/ayush-jsrt/VidSense---DU-Hacks3.0/releases">Extension</a>
+            <a href="https://github.com/ayush-jsrt/VidSense---DU-Hacks3.0">GitHub</a>
+            <a href="standalone/record.html">Record</a>
+            <a href="standalone/summary.html">Summarize</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>VidSense</h1>
+        <div class="buttons">
+
+            <div class="upload-box">
+                <input type="file" id="audioFile" accept="audio/*" onchange="displayFileName()">
+                <label for="audioFile">Choose Audio File</label>
+                <span id="fileName" style="display: none;"></span>
+            </div>
+            <button class="summarize-btn" onclick="handleUpload()">Transcript</button>
+        </div>
+        <div class="audio-player" id="audioPlayer">
+            <!-- Audio player will be displayed here -->
+        </div>
+        <div class="transcript" id="transcript">
+            <!-- Transcript will be displayed here -->
+        </div>
+        <div id="loading" style="display: none;">Loading...</div>
+        <button class="copy-btn" onclick="copyTranscript()">Copy Transcript</button>
+    </div>
+
+   
+
+    <script src="standalone/script.js"></script>
+</body>
+
+</html>
